@@ -8,6 +8,7 @@ on:
 jobs:
   run-it:
     runs-on: ubuntu-latest
+    container: node:16.16.0
     name: 联通掌厅签到
     if: github.event.repository.owner.id == github.event.sender.id
     steps:
